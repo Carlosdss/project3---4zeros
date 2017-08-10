@@ -10,15 +10,17 @@
   border-color: green;
 }
 
-h1.text-center {
+h1.text-center-logoDigits {
 font-family: 'Digital-7', arial;
 font-size: 100px;
 text-shadow: 4px 4px 4px #aaa;
+text-align: center;
 }
-h2.text-center {
+h2.text-center-logoName {
 font-family: 'Digital-7';
 font-size: 40px;
 text-shadow: 4px 4px 4px #aaa;
+text-align: center;
 }
 
 .panel.panel-default {

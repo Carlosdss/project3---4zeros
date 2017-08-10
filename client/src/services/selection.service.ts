@@ -23,15 +23,15 @@ export class SelectionService {
   ]
 
   clubs: Array<any> = [
-    {location: "Madrid", club: "Pacha"},
+    {location: "Madrid", club: "Pachá"},
     {location: "Madrid", club: "Kapital"},
-    {location: "Madrid", club: "Commodoro"},
-    {location: "Madrid", club: "Graff"},
+    {location: "Madrid", club: "Comodoro"},
+    {location: "Madrid", club: "Graf"},
     {location: "Barcelona", club: "Razzmatazz"},
     {location: "Barcelona", club: "Opium"},
     {location: "Barcelona", club: "Soho"},
-    {location: "Barcelona", club: "Hyde"},
-    {location: "Ibiza", club: "Pacha"},
+    {location: "Barcelona", club: "Hyde Club"},
+    {location: "Ibiza", club: "Pachá Ibiza"},
     {location: "Ibiza", club: "Ushuaia"},
     {location: "Ibiza", club: "Amnesia"},
     {location: "Ibiza", club: "Space"}
