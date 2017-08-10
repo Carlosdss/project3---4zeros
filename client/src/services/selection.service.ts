@@ -6,7 +6,6 @@ import * as _ from 'underscore';
 
 @Injectable()
 export class SelectionService {
-    MONGO_URL: string = 'http://localhost:3000';
 
   type: string = "";
   location: string = "";

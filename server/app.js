@@ -11,6 +11,7 @@ const session    = require('express-session');
 const passport   = require('passport');
 const cors = require("cors");
 
+
 const dbUrl = process.env.MONGO_URL;
 console.time('db');
 mongoose.connect(dbUrl)
@@ -66,7 +67,6 @@ app.use('/api/auth', authRoutes);
 
 const beverageRoutes = require('./routes/beverage');
 app.use('/api/beverage', beverageRoutes);
-
 
 app.use((req, res, next) => {
   res.sendfile(__dirname + '/public/index.html');

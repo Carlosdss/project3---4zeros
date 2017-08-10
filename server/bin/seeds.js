@@ -1,6 +1,8 @@
+require('dotenv').config();
 const Club = require('../models/Club');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/fourzeros')
+const dbUrl = process.env.MONGO_URL;
+mongoose.connect(dbUrl)
   .then(() => {
     let clubs = [
       {

@@ -19,14 +19,16 @@ export interface Beverage{
 
 export interface Order{
   _id:string,
-  beverages: Array<Beverage>
+  beverages: Array<Beverage>,
+  club: string,
+  updated_at:Date,
+  created_at:Date
 }
 
 @Injectable()
 export class ConfirmationService {
     beverage: Beverage;
     order: Order;
-    MONGO_URL: string = 'http://localhost:3000';
     options: object = {withCredentials:true};
     BASE_URL: string=`${environment.BASE_URL}/api/beverage`; //environment.BASE_URL: "http://localhost:3000",
 
