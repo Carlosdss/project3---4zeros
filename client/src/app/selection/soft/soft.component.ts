@@ -10,6 +10,7 @@ import { SelectionService } from '../../../services/selection.service';
 export class SoftComponent implements OnInit {
 
   softs: Array<string>
+  text = "&nbsp";
 
   constructor(
     private router: Router,

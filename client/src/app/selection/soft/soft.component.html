@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="http://allfont.es/allfont.css?fonts=digital-7" rel="stylesheet" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -17,7 +18,7 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <div class="jumbotron text-center">
-    <h1>Select your soft drink<i class="fa fa-hand-o-right fa-1x fa-inverse" aria-hidden="true"> </i> </h1>
+    <h1>Select your soft drink <span [innerHTML]="text"> </span> <i class="fa fa-hand-o-right fa-1x fa-inverse" aria-hidden="true"> </i> </h1>
   </div>
 
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -28,13 +29,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand logoDigits" href="#myPage">00:00 <span class= "logoName">FOURZEROS</span></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#about">CONTACT</a></li>
-        <li><a href="#contact">CHECKOUT <span class="glyphicons glyphicons-glass"></span></a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">CONTACT</a></li>
+        <li> <a [routerLink]="['/add-or-check-out']"> CHECKOUT </a></li>
+        <li><a href=""> <i class="fa fa-shopping-cart fa-2x fa-inverse" aria-hidden="true"></i></a></li>
       </ul>
     </div>
   </div>

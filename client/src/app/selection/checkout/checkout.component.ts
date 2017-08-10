@@ -12,6 +12,7 @@ import { ConfirmationService } from '../../../services/confirmation.service';
 export class CheckoutComponent implements OnInit {
 
   order= [];
+  text = "&nbsp";
 
   constructor(
     private router: Router,

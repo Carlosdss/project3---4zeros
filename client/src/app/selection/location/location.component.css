@@ -4,10 +4,36 @@ body {
      line-height: 1.8;
      color: #818181;
      background-color: #00EAFF;
-     height: 100vh;
+     height: 100%;
+     min-height: 100vh;
  }
  .navbar-default {
-   background-color:#ccc !important;}
+   background-color: #000033 !important;}
+
+.logoDigits{
+  font-family: 'Digital-7', arial;
+  font-size: 4em;
+  text-shadow: 2px 2px 2px #aaa;
+}
+
+.logoName{
+  font-family: 'Digital-7', arial;
+  font-size: 0.5em;
+  text-shadow: 2px 2px 2px #aaa;
+}
+
+.logoDigits{
+  font-family: 'Digital-7', arial;
+  font-size: 4em;
+  text-shadow: 2px 2px 2px #aaa;
+}
+
+.logoName{
+  font-family: 'Digital-7', arial;
+  font-size: 0.5em;
+  text-shadow: 2px 2px 2px #aaa;
+}
+
  h2 {
      font-size: 24px;
      text-transform: uppercase;
@@ -119,7 +145,7 @@ body {
  }
  .navbar {
      margin-bottom: 0;
-     background-color: #f4511e;
+     background-color: black;
      z-index: 9999;
      border: 0;
      font-size: 12px !important;
@@ -133,7 +159,7 @@ body {
  }
  .navbar-nav li a:hover, .navbar-nav li.active a {
      color: #f4511e !important;
-     background-color: #fff !important;
+     background-color: black !important;
  }
  .navbar-default .navbar-toggle {
      border-color: transparent;

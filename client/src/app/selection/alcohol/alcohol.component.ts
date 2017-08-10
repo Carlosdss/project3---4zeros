@@ -10,6 +10,7 @@ import { SelectionService } from '../../../services/selection.service';
 export class AlcoholComponent implements OnInit {
 
   alcohols: Array<any>
+  text = "&nbsp";
 
   constructor(
     private router: Router,

@@ -10,6 +10,7 @@ import { SelectionService } from '../../../services/selection.service';
 export class BrandComponent implements OnInit {
 
   brands: Array<string>
+  text = "&nbsp";
 
   constructor(
     private router: Router,

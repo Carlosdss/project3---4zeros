@@ -22,6 +22,7 @@ export class ConfirmationComponent implements OnInit {
   }
 
   units: number = 1;
+  text = "&nbsp";
 
   constructor(
     private router: Router,

@@ -10,6 +10,7 @@ import { SelectionService } from '../../../services/selection.service';
 export class LocationComponent implements OnInit {
 
   locations: Array<any>;
+    text = "&nbsp";
 
   constructor(
     private router: Router,
