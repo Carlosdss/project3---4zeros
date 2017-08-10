@@ -1,0 +1,24 @@
+
+
+  <div>
+    Club: <span> {{this.beverage.club}} </span>
+  </div>
+
+  <div class="drinkBriefing">
+    Your Selection:
+    <span> {{this.beverage.size}},  </span>
+    <span> {{this.beverage.alcohol}}, </span>
+     <span> {{this.beverage.brand}}, </span>
+     <span> {{this.beverage.soft}}, </span>
+     <span> Number: {{this.beverage.number}} </span>
+
+     <div>
+       <button (click)="increment()"> + </button>
+       <button (click)="decrement()"> - </button>
+     </div>
+
+  </div>
+
+<button (click)="confirmBeverage()"> Confirm Selection </button>
+<br>
+<button (click)="back()"> Back </button>

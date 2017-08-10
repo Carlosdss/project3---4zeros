@@ -1,0 +1,9 @@
+<div> Select your Club
+
+  <ul class="clubs" *ngFor = "let club of clubs">
+    <button (click)="saveClubComponent(club)"> {{club}} </button>
+  </ul>
+
+  <button (click)="back()"> Back </button>
+
+</div>

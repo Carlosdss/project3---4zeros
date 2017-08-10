@@ -1,0 +1,9 @@
+<div> Select your Type of Drink
+
+  <ul class="types" *ngFor = "let type of types">
+    <button (click)="saveTypeComponent(type)"> {{type}} </button>
+  </ul>
+
+<button (click)="back()"> Back </button>
+
+</div>

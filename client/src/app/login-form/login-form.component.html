@@ -1,0 +1,29 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+<link href="http://allfont.es/allfont.css?fonts=digital-7" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="/stylesheets/style.css" type="text/css" rel="stylesheet" />
+<script src="../../public/javascript/javascript.js" type="text/javascript"></script>
+
+<h1 class="text-center">00:00</h1>
+<h2 class="text-center">fourzeros</h2><br/>
+<form>
+  <label style="font-size:30px">Log In Information</label>
+  <br> <br>
+  <input class="form-control" id="email" type="text" [(ngModel)]="formInfo.email" name="email" placeholder="Email Address" style="font-size:20px" />
+  <br>
+  <input class="form-control" id="password" type="password" [(ngModel)]="formInfo.password" name="password" placeholder="Password" style="font-size:20px" />
+  <p class="text-right" style="font-size:20px"><a href="">Forgot Password</a></p>
+  <button (click)="login()" class="btn btn-primary btn-block" type="submit" style="font-size:30px">LOG IN</button>
+  <hr/>
+  <p class="blue" style="font-size:20px">Sign in with</p>
+  <p><a href="/auth/facebook"><i class="fa fa-facebook-f fa-lg"></i></a></p>
+  <hr/>
+  <br><br>
+  <p class="text-center">
+    <a [routerLink]="['/signup']" style="font-size:30px">Create new account?</a>
+  </p>
+    <a [routerLink]="['/locations']" style="font-size:30px">Locations</a>
+
+</form>

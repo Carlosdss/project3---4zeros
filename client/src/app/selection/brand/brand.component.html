@@ -1,0 +1,9 @@
+<div> Select your Club
+
+  <ul class="brands" *ngFor = "let brand of brands">
+    <button (click)="saveBrandComponent(brand)"> {{brand}} </button>
+  </ul>
+
+  <button (click)="back()"> Back </button>
+
+</div>

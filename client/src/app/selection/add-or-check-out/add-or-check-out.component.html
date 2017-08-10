@@ -1,0 +1,45 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+</head>
+
+<body>
+
+  <div class="table-title">
+    <h3>Your current order</h3>
+  </div>
+
+  <table class="table-fill">
+
+    <thead>
+
+      <tr>
+        <th class="text-center"> Type of drink </th>
+        <th class="text-center"> Base </th>
+        <th class="text-center"> Base brand </th>
+        <th class="text-center"> Soft Drink </th>
+        <th class="text-center"> Quantity </th>
+      </tr>
+
+    </thead>
+
+    <tbody class="table-hover" *ngFor="let drink of orders">
+
+      <tr>
+        <td class="text-left">{{drink.size}}</td>
+        <td class="text-left">{{drink.alcohol}}</td>
+        <td class="text-left">{{drink.brand}}</td>
+        <td class="text-left">{{drink.soft}}</td>
+        <td class="text-center">{{drink.number}}</td>
+      </tr>
+
+
+    </tbody>
+
+  </table>
+
+  <button (click)="addAnother()"> Add another  drink </button>
+  <button (click)="checkout()"> Checkout </button>
+
+
+</body>

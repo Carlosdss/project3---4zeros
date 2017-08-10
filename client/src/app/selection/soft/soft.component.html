@@ -1,0 +1,9 @@
+<div> Select your Soft Drink
+
+  <ul class="softs" *ngFor = "let soft of softs">
+    <button (click)="saveSoftComponent(soft)"> {{soft}} </button>
+  </ul>
+
+<button (click)="back()"> Back </button>
+
+</div>

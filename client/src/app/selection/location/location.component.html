@@ -1,0 +1,9 @@
+<div> Select your location
+
+  <ul class="locations" *ngFor = "let location of locations">
+    <button (click)="saveLocationComponent(location)"> {{location}} </button>
+  </ul>
+
+  <button (click)="back()"> Back </button>
+
+</div>

@@ -1,0 +1,9 @@
+<div> Select your Club
+
+  <ul class="alcohols" *ngFor = "let alcohol of alcohols">
+    <button (click)="saveAlcoholComponent(alcohol)"> {{alcohol}} </button>
+  </ul>
+
+  <button (click)="back()"> Back </button>
+
+</div>
