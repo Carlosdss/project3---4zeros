@@ -18,7 +18,7 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <div class="jumbotron text-center">
-    <h1> Your Selection <span [innerHTML]="text"> </span> <i class="fa fa-list fa-1x fa-inverse" aria-hidden="true"> </i> </h1>
+    <h1> Selected Drink <span [innerHTML]="text"> </span> <i class="fa fa-list fa-1x fa-inverse" aria-hidden="true"> </i> </h1>
   </div>
 
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -33,10 +33,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="">Hello {{user}} @ {{club}} <span [innerHTML]="text"> </span><span [innerHTML]="text"> </span></a></li>
         <li><a href="">ABOUT</a></li>
         <li><a href="">CONTACT</a></li>
-        <li><a href="">CHECKOUT</a></li>
-        <li><a href=""> <i class="fa fa-shopping-cart fa-2x fa-inverse" aria-hidden="true"></i></a></li>
+        <li> <a [routerLink]="['/add-or-check-out']"> CHECKOUT </a></li>
+        <li><a [routerLink]="['/add-or-check-out']"> <i class="fa fa-shopping-cart fa-2x fa-inverse" aria-hidden="true"></i></a></li>
       </ul>
     </div>
   </div>

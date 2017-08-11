@@ -12,6 +12,8 @@ import { ConfirmationService } from '../../../services/confirmation.service';
 export class CheckoutComponent implements OnInit {
 
   order= [];
+  club: string;
+  user: string;
   text = "&nbsp";
 
   constructor(
@@ -22,6 +24,9 @@ export class CheckoutComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.club = this.selection.club;
+    this.user = this.session.user.name;
+
   }
 
 

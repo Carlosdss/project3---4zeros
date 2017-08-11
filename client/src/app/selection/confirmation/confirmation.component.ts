@@ -23,6 +23,8 @@ export class ConfirmationComponent implements OnInit {
 
   units: number = 1;
   text = "&nbsp";
+  club: string;
+  user: string;
 
   constructor(
     private router: Router,
@@ -39,7 +41,9 @@ export class ConfirmationComponent implements OnInit {
     this.beverage.soft = this.selection.soft,
     this.beverage.club = this.selection.club,
     this.beverage.number = this.units,
-    this.beverage.user = this.session.user
+    this.beverage.user = this.session.user;
+    this.club = this.selection.club;
+    this.user = this.session.user.name;
   }
 
  confirmBeverage() {

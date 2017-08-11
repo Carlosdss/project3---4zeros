@@ -32,10 +32,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="">Hello {{user}} @ <a [routerLink]="['/clubs']"> {{club}} </a>  <span [innerHTML]="text"> </span><span [innerHTML]="text"> </span></a></li>
         <li><a href="">ABOUT</a></li>
         <li><a href="">CONTACT</a></li>
-        <li><a href="">CHECKOUT</a></li>
-        <li><a href=""> <i class="fa fa-shopping-cart fa-2x fa-inverse" aria-hidden="true"></i></a></li>
+        <li> <a [routerLink]="['/add-or-check-out']"> CHECKOUT </a></li>
+        <li><a [routerLink]="['/add-or-check-out']"> <i class="fa fa-shopping-cart fa-2x fa-inverse" aria-hidden="true"></i></a></li>
       </ul>
     </div>
   </div>

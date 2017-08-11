@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="http://allfont.es/allfont.css?fonts=digital-7" rel="stylesheet" type="text/css" />
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -15,7 +16,7 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <div class="jumbotron text-center">
-    <h1>Select your liquour</h1>
+      <h1> Your current order <span [innerHTML]="text"> </span> <i class="fa fa-hand-o-right fa-1x fa-inverse" aria-hidden="true"> </i> </h1>
   </div>
 
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -30,6 +31,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="">Hello {{user}} @ {{club}} <span [innerHTML]="text"> </span><span [innerHTML]="text"> </span></a></li>
         <li><a href="">ABOUT</a></li>
         <li><a href="">CONTACT</a></li>
         <li><a href="">CHECKOUT</a></li>
@@ -39,11 +41,9 @@
   </div>
 </nav>
 
+<div id="about" class="container-fluid">
 
-
-  <div class="table-title">
-    <h3>Your current order</h3>
-  </div>
+    <button class="confirmButton" (click)="emptyCart()"> Empty Cart </button>
 
   <table class="table-fill">
 
@@ -62,10 +62,10 @@
     <tbody class="table-hover" *ngFor="let drink of orders">
 
       <tr>
-        <td class="text-left">{{drink.size}}</td>
-        <td class="text-left">{{drink.alcohol}}</td>
-        <td class="text-left">{{drink.brand}}</td>
-        <td class="text-left">{{drink.soft}}</td>
+        <td class="text-center">{{drink.size}}</td>
+        <td class="text-center">{{drink.alcohol}}</td>
+        <td class="text-center">{{drink.brand}}</td>
+        <td class="text-center">{{drink.soft}}</td>
         <td class="text-center">{{drink.number}}</td>
       </tr>
 
@@ -73,8 +73,11 @@
 
   </table>
 
-  <button (click)="addAnother()"> Add another  drink </button>
-  <button (click)="checkout()"> Checkout </button>
 
+    <button class="backButton" (click)="addAnother()"> Add another  drink </button>
+    <button class="confirmButton" (click)="checkout()"> Checkout </button>
+
+
+</div>
 
 </body>

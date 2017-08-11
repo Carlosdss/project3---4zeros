@@ -73,11 +73,13 @@ export class SelectionService {
 
   softs: Array<any> = [
     {soft: "Coca-Cola"},
-    {soft: "Fanta Naranja"},
-    {soft: "Fanta Limón"},
-    {soft: "Schweppes"},
-    {soft: "Water"},
-    {soft: "Sprite"}
+    {soft: "Orange Fanta"},
+    {soft: "Lemon Fanta"},
+    {soft: "Sprite"},
+    {soft: "Schweppes Tonic"},
+    {soft: "Premium Tonic"},
+    {soft: "Spring Water"},
+    {soft: "Sparkling Water"}
   ]
 
   constructor() { }
@@ -171,7 +173,7 @@ export class SelectionService {
     for(let i = 0; i < this.softs.length; i++){
       softs.push(this.softs[i].soft);
     }
-    return softs.sort();
+    return softs;
   }
 
     saveSoft(soft) {

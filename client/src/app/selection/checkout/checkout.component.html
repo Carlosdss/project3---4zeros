@@ -1,3 +1,65 @@
-<p>
-  checkout works!
-</p>
+
+
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="http://allfont.es/allfont.css?fonts=digital-7" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <div class="jumbotron text-center">
+    <h1>Order received! <span [innerHTML]="text"> </span> <i class="fa fa-check-square-o fa-1x fa-inverse" aria-hidden="true"></i></h1>
+  </div>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand logoDigits" href="#myPage">00:00 <span class= "logoName">FOURZEROS</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="">Hello {{user}} @ <a [routerLink]="['/clubs']"> {{club}} </a>  <span [innerHTML]="text"> </span><span [innerHTML]="text"> </span></a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">CONTACT</a></li>
+        <li> <a [routerLink]="['/add-or-check-out']"> CHECKOUT </a></li>
+        <li><a [routerLink]="['/add-or-check-out']"> <i class="fa fa-shopping-cart fa-2x fa-inverse" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div class="orderSent">
+        <h1>Thanks for your order.</h1>
+        <h1>Please, wait for the advice.</h1>
+        <p><i class="fa fa-bell-o fa-4x fa-inverse" aria-hidden="true"></i></p>
+      </div>
+
+    <br><br>
+    <button class="backButton" (click)="back()"> Back </button>
+    </div>
+
+
+  </div>
+</div>

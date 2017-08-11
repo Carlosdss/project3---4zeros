@@ -7,6 +7,7 @@ import { environment } from '../environments/environment';
 
 export interface User{
   _id:string,
+  name: string,
   email:string,
   updated_at:Date,
   created_at:Date

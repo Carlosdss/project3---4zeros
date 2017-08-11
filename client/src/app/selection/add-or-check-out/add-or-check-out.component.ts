@@ -13,6 +13,8 @@ import { ConfirmationService } from '../../../services/confirmation.service';
 export class AddOrCheckOutComponent implements OnInit {
 
   orders: Array<any>;
+  user: string;
+  club: string;
 
   constructor(
     private router: Router,
@@ -23,6 +25,8 @@ export class AddOrCheckOutComponent implements OnInit {
 
   ngOnInit() {
     this.orders = this.confirmation.orderDrinks;
+    this.club = this.selection.club;
+    this.user = this.session.user.name;
   }
 
   addAnother(){
@@ -35,6 +39,11 @@ export class AddOrCheckOutComponent implements OnInit {
 
   checkout(){
     this.router.navigate(['/checkout']);
+  }
+
+  emptyCart(){
+    this.confirmation.orderDrinks = [];
+    this.orders = this.confirmation.orderDrinks;
   }
 
 }

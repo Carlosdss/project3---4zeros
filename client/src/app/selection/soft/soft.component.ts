@@ -1,6 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { SelectionService } from '../../../services/selection.service';
+import { SessionService } from '../../../services/session.service';
 
 @Component({
   selector: 'app-soft',
@@ -10,16 +11,21 @@ import { SelectionService } from '../../../services/selection.service';
 export class SoftComponent implements OnInit {
 
   softs: Array<string>
+  club: string;
+  user: string;
   text = "&nbsp";
 
   constructor(
     private router: Router,
-    private softComponent: SelectionService
+    private softComponent: SelectionService,
+    private session: SessionService
   ) {
   }
 
   ngOnInit() {
-    this.softs = this.softComponent.getSofts()
+    this.softs = this.softComponent.getSofts();
+    this.club = this.softComponent.club;
+    this.user = this.session.user.name;
   }
 
   saveSoftComponent(soft) {
